@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Header from "../components/layout/Header";
 import Container from "../components/layout/Container";
 import "./globals.css";
+import Footer from "../components/layout/Footer";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -26,6 +27,7 @@ export default function RootLayout({
         <main>
           <Container>{children}</Container>
         </main>
+        <Footer />
       </body>
     </html>
   );
